@@ -12,6 +12,7 @@ def now_serving(katz_deli)
   else
     "Currently serving #{katz_deli.shift()}."
   end
+end
 
 def line(katz_deli)
   if katz_deli < 1 
