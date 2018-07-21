@@ -20,12 +20,9 @@ def line(katz_deli)
   line_string = "The line is currently:"
   for i in 1..katz_deli.length do
     line_string += "#{i+1}. #{katz_deli[i]}"
+    if i < katz_deli.length - 1 
+      line_string += ", "
+    end
   end
+  line_string
 end
-
-
-+  var lineString = ` 1. ${katzDeliLine[0]}`;
-+  for(let i = 1; i < katzDeliLine.length; i++){
-+    lineString += `, ${i+1}. ${katzDeliLine[i]}`;
-+  }
-+  return lineString;
