@@ -17,14 +17,14 @@ def line(katz_deli)
   if katz_deli < 1 
     "The line is currently empty."
   end
-  line_string = 
+  line_string = "The line is currently:"
   for i in 1..katz_deli.length do
-    
+    line_string += "#{i+1}. #{katz_deli[i]}"
   end
 end
 
 
-+  var lineString = `The line is currently: 1. ${katzDeliLine[0]}`;
++  var lineString = ` 1. ${katzDeliLine[0]}`;
 +  for(let i = 1; i < katzDeliLine.length; i++){
 +    lineString += `, ${i+1}. ${katzDeliLine[i]}`;
 +  }
