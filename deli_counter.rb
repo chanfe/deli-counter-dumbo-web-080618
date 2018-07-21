@@ -3,20 +3,20 @@ katz_deli = []
 
 def take_a_number(katz_deli, name)
   katz_deli.push(name)
-  "Welcome, #{name}. You are number #{katz_deli.length} in line."
+  puts "Welcome, #{name}. You are number #{katz_deli.length} in line."
 end
 
 def now_serving(katz_deli)
   if katz_deli.length < 1 
-    "There is nobody waiting to be served!"
+    puts "There is nobody waiting to be served!"
   else
-    "Currently serving #{katz_deli.shift()}."
+    puts "Currently serving #{katz_deli.shift()}."
   end
 end
 
 def line(katz_deli)
   if katz_deli.length < 1 
-    "The line is currently empty."
+    puts "The line is currently empty."
   end
   line_string = "The line is currently:"
   for i in 1..katz_deli.length do
@@ -25,5 +25,5 @@ def line(katz_deli)
       line_string += ", "
     end
   end
-  line_string
+  puts line_string
 end
