@@ -22,7 +22,7 @@ def line(katz_deli)
     for i in 0..katz_deli.length-1 do
       line_string += "#{i+1}. #{katz_deli[i]}"
       if i < katz_deli.length - 1 
-        line_string += ", "
+        line_string += " "
       end
     end
   end
