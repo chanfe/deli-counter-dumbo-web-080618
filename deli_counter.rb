@@ -20,10 +20,10 @@ def line(katz_deli)
   else
     line_string = "The line is currently: "
     for i in 0..katz_deli.length-1 do
-      line_string += "#{i+1}. #{katz_deli[i]} "
-      #if i < katz_deli.length - 1 
-      #  line_string += " "
-      #end
+      line_string += "#{i+1}. #{katz_deli[i]}"
+      if i < katz_deli.length - 1 
+        line_string += " "
+      end
     end
   end
   puts line_string
