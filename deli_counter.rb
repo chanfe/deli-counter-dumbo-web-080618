@@ -19,7 +19,7 @@ def line(katz_deli)
     line_string = "The line is currently empty."
   else
     line_string = "The line is currently: "
-    for i in 1..katz_deli.length do
+    for i in 1..katz_deli.length-1 do
       line_string += "#{i}. #{katz_deli[i]}"
       if i < katz_deli.length - 1 
         line_string += ", "
