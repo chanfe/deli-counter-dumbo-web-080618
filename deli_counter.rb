@@ -16,7 +16,7 @@ end
 
 def line(katz_deli)
   if katz_deli.length < 1 
-    puts "The line is currently empty."
+    line_string = "The line is currently empty."
   else
     line_string = "The line is currently:"
     for i in 1..katz_deli.length do
